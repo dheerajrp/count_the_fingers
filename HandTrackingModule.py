@@ -46,7 +46,7 @@ def main():
         img = detector.findHands(img)
         lmlist = detector.findPosition(img)
         currentTime = time.time()
-        fps = 30 / (currentTime - previousTime)  # 30 frames per second
+        fps = 1 / (currentTime - previousTime)
         previousTime = currentTime
 
         cv2.putText(img, "fps: "+str(int(fps)), (20, 50), cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 200, 0), 3)  # adding seconds to the frame
