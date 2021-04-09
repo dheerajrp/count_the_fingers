@@ -43,7 +43,7 @@ def main():
         cv2.putText(img, f'fps: {int(fps)}', (40, 70), cv2.FONT_ITALIC, 1, (0, 255, 0), 2, cv2.FILLED)
 
         cv2.imshow("Image", img)
-        cv2.waitKey(10)
+        cv2.waitKey()
 
 
 if __name__ == "__main__":
